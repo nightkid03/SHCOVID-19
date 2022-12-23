@@ -37,5 +37,5 @@ ci95=plot.roc(x=mydata$Type,predictor = mydata$GMI,ci=TRUE,print.auc=TRUE)
 
 ### AUPRC ###
 sscurves=pr.curve(scores.class0 =mydata$Index[mydata$Type=="group1"],
-                  scores.class1 =mydata$Index[mydata$Type2=="group2"],curve=T)
+                  scores.class1 =mydata$Index[mydata$Type=="group2"],curve=T)
 AUPRC_draw=data.frame(sscurves$curve)

@@ -39,4 +39,3 @@ ci95=plot.roc(x=mydata$Type,predictor = mydata$GMI,ci=TRUE,print.auc=TRUE)
 sscurves=pr.curve(scores.class0 =mydata$Index[mydata$Type=="group1"],
                   scores.class1 =mydata$Index[mydata$Type2=="group2"],curve=T)
 AUPRC_draw=data.frame(sscurves$curve)
-colnames(AUPRC_draw)=c("Recall","Precision","cutoff")
